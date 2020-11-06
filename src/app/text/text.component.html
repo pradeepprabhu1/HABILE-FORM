@@ -1,0 +1,6 @@
+<h1>{{initialname}}</h1>
+<div class = "form-group">
+        <label>{{name}}</label>
+        <input type='text' *ngIf="isText" min = {{minInclusive}} max = {{maxInclusive}} id={{id}} name={{name}} value = {{value}} required = [isMandatory] class="form-control">
+        <input type='number' *ngIf="!isText" min = {{minInclusive}} max = {{maxInclusive}} id={{id}} name={{name}} required = [isMandatory] class="form-control">
+</div>

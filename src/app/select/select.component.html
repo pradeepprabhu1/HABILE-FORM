@@ -1,0 +1,9 @@
+<div class = "form-group">
+    <label>{{name}}</label>
+    <select id={{id}} name={{name}} class="form-control" required = [isMandatory]>
+        <option value="0">---Select---</option>
+        <option *ngFor="let value of values">
+            {{ value }}
+          </option>
+      </select>
+</div>
